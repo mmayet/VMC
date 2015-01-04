@@ -6,6 +6,10 @@ background-image: url('jeanislamic.png');
 background-repeat: repeat;
 }
 
+.button{
+    margin-top: 5px;
+}
+
 .contact-map {
 	margin-bottom: 15px;
 	height: 220px;
