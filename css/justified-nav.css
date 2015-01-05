@@ -21,7 +21,10 @@ background-repeat: repeat;
 	font-size: 22px;
 }
 
-
+@media (min-width: 400px) {
+  .contact-map {
+    width: auto;
+  }
 
 body {
   padding-top: 20px;
