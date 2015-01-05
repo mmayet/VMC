@@ -22,7 +22,8 @@ background-repeat: repeat;
 }
 
 @media (max-width: 400px) {
-    .contact-map {
+    .contact-map, 
+    .info-div {
         width: auto !important;
     }
 
