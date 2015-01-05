@@ -21,18 +21,7 @@ background-repeat: repeat;
 	font-size: 22px;
 }
 
-@media (max-width: 2500px) {
-  /* Remove the padding we set earlier */
-  .contact-map {
-  	width: auto !important;
-  	//margin-left: -20px;
-  	padding-right: 0;
-    padding-left: 0;
-  }
-  .clear {
-  	display: none;
-  }
-}
+
 
 body {
   padding-top: 20px;
