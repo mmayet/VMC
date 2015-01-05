@@ -22,9 +22,14 @@ background-repeat: repeat;
 }
 
 @media (min-width: 400px) {
-  .contact-map {
-    width: auto;
-  }
+    .contact-map {
+        width: auto !important;
+    }
+
+    .clear {
+        display: none;
+    }
+}
 
 body {
   padding-top: 20px;
