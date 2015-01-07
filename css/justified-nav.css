@@ -17,6 +17,10 @@ background-repeat: repeat;
 	border: 7px solid rgb(188, 216, 242);
 }
 
+.info-div {
+    width: 400px;
+}
+
 .prayer-times {
 	font-size: 22px;
 }
