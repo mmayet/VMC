@@ -1,11 +1,20 @@
-html {
+html#home {
 font-size: 100%;
 -webkit-text-size-adjust: 100%;
 -ms-text-size-adjust: 100%;
 background-image: url('jeanislamic.png');
 background-repeat: repeat;
 }
-
+html#dua {
+font-size: 100%;
+-webkit-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+background-image: url('g1.jpg');
+background-repeat: repeat;
+}
+.dua {
+  border-bottom: 1px solid #ccc;
+}
 .media-button{
     margin-top: 10px;
 }
