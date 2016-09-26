@@ -4,25 +4,25 @@ jQuery(function($) {
 
         var script = document.createElement('script');
         script.type = 'text/javascript';
-        script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyB4VAX1r5GUTB8ICQsisbSZb4UQojgMNSw&v=3.exp&sensor=false&callback=initMap"
+        script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyB4VAX1r5GUTB8ICQsisbSZb4UQojgMNSw&callback=initMap"
         document.body.appendChild(script);
     });
 });
 
 function initMap() {
-    var myLatlng = new google.maps.LatLng(33.867218,-117.933460);
-    var mapOptions = {
-      zoom: 17,
-      center: myLatlng
-    };
+        var myLatlng = new google.maps.LatLng(33.867218,-117.933460);
+        var mapOptions = {
+          zoom: 8,
+          center: myLatlng
+        }
+        var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 
-    var map = new google.maps.Map(document.getElementById('map-canvas'),  mapOptions);
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            title:"VMC Masjid"
+        });
 
-    var marker = new google.maps.Marker({
-      position: myLatlng,
-      map: map,
-      title: 'VMC Masjid'
-    });
+        marker.setMap(map);
 }
 
 /*
