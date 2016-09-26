@@ -9,7 +9,7 @@ jQuery(function($) {
     });
 });
 
-function initialize() {
+function initMap() {
     var myLatlng = new google.maps.LatLng(33.867218,-117.933460);
     var mapOptions = {
       zoom: 17,
