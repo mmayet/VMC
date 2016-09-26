@@ -4,7 +4,7 @@ jQuery(function($) {
 
         var script = document.createElement('script');
         script.type = 'text/javascript';
-        script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyB4VAX1r5GUTB8ICQsisbSZb4UQojgMNSw&callback=initMap"
+        script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyB4VAX1r5GUTB8ICQsisbSZb4UQojgMNSw&v=3.exp&sensor=false&callback=initMap"
         document.body.appendChild(script);
     });
 });
