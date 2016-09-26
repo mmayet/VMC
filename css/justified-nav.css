@@ -15,10 +15,12 @@ background-repeat: repeat;
 .dua {
   border-bottom: 1px solid #ccc;
 }
-.media-button{
+.media-button {
     margin-top: 10px;
 }
-
+.side-pages {
+	font-family: Georgia, serif;	
+}
 .contact-map {
 	margin-bottom: 15px;
 	height: 220px;
