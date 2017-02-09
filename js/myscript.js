@@ -7,8 +7,11 @@ jQuery(function($) {
         script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyB4VAX1r5GUTB8ICQsisbSZb4UQojgMNSw&callback=initMap"
         document.body.appendChild(script);
 
-        $("#poemmp3").addEventListener('play', function(e) {
+        var poemmp3 = document.getElementById("poemmp3");
+        console.log(poemmp3);
+        poemmp3.addEventListener('play', function(e) {
             console.log("play");
+            ga('send', 'event', 'Poem', 'Click', 'Audio');
         })
     });
 });
