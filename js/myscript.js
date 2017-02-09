@@ -1,29 +1,35 @@
 var top_menu_height = 0;
 jQuery(function($) {
-        $(document).ready( function() {
+    $(document).ready(function() {
 
         var script = document.createElement('script');
         script.type = 'text/javascript';
         script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyB4VAX1r5GUTB8ICQsisbSZb4UQojgMNSw&callback=initMap"
         document.body.appendChild(script);
+
+        $("#poemmp3").addEventListener('play', function(e) {
+            console.log("play");
+        })
     });
 });
 
 function initMap() {
-        var myLatlng = new google.maps.LatLng(33.867218,-117.933460);
-        var mapOptions = {
-          zoom: 15,
-          center: myLatlng
-        }
-        var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+    var myLatlng = new google.maps.LatLng(33.867218, -117.933460);
+    var mapOptions = {
+        zoom: 15,
+        center: myLatlng
+    }
+    var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 
-        var marker = new google.maps.Marker({
-            position: myLatlng,
-            title:"VMC Masjid"
-        });
+    var marker = new google.maps.Marker({
+        position: myLatlng,
+        title: "VMC Masjid"
+    });
 
-        marker.setMap(map);
+    marker.setMap(map);
 }
+
+
 
 /*
 $(".jumbotron").mouseenter(function() {
