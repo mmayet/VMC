@@ -1,3 +1,6 @@
+html#article_viewer {
+  background-color: #313131!important;
+}
 html#home {
 font-size: 100%;
 -webkit-text-size-adjust: 100%;
@@ -189,4 +192,16 @@ body {
     float: none;
     margin: 0 auto;
   }
+}
+.article p {
+  font-size:18px!important; 
+  line-height:1.5;
+  font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
+  color: #F5F5F5; 
+
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-font-smoothing: antialiased !important;
+  text-rendering: optimizelegibility !important;
+  letter-spacing: .03em;
 }
